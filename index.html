@@ -24,8 +24,9 @@
                     <h1 class="animated bounceInLeft">
                         Criatividade.</br>
                         Agilidade.</br>
-                        e Profissionalismo.
+                        e muito valor.
                     </h1>
+                    <h2>Para o seu negócio!</h2>
                 </div>
             </div>
         </div>
@@ -36,10 +37,12 @@
 <section id="about" class="container content-section">
     <div class="row">
         <div class="col-lg-10 col-lg-offset-1">
-            <h1>Temos 3 pilares muito fortes:</h1>
+            <div class="title">
+               <span>Temos 3 pilares muito fortes</span>
+            </div>
             <div class="row">
                 <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
+                    <div class="thumbnail animated bounceInLeft">
                         <img src="assets/icons/drops.png">
                         <div class="caption">
                             <h3>Transparência</h3>
@@ -51,7 +54,7 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
+                    <div class="thumbnail animated bounceInUp">
                         <img src="assets/icons/hand-shake.png">
                         <div class="caption">
                             <h3>Respeito</h3>
@@ -60,7 +63,7 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
+                    <div class="thumbnail  animated bounceInRight">
                         <img src="assets/icons/calendar.png">
                         <div class="caption">
                             <h3>Comprometimento</h3>
@@ -79,7 +82,9 @@
 <section id="services" class="container content-section">
     <div class="row">
         <div class="col-lg-10 col-lg-offset-1">
-            <h1>Serviços:</h1>
+            <div class="title">
+                <span>Serviços</span>
+            </div>
             <div class="row">
                 <div class="col-lg-4">
                     <div class="media">
@@ -130,7 +135,7 @@
                     <div class="media">
                         <div class="media-left media-top">
                             <a href="#">
-                                <img class="media-object" src="assets/icons/adwords.png" alt="...">
+                                <img class="media-object" src="assets/icons/ad.png" alt="...">
                             </a>
                         </div>
                         <div class="media-body">
@@ -179,7 +184,9 @@
 <section id="how-we-work" class="container content-section">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
-            <h1>Como profissionais buscamos:</h1>
+            <div class="title">
+                <span>Como profissionais buscamos</span>
+            </div>
             <div class="media">
                 <div class="media-left media-middle">
                     <a href="#">
@@ -245,35 +252,14 @@
 <section id="tecnologies" class="container content-section"></section>
 <section id="contact" class="container content-section"></section>
 
-<!--
-            <div class="row">
-               <div class="col-sm-6 col-md-4">
-                   <div class="thumbnail">
-                       <img src="assets/icons/code.png">
-                       <div class="caption">
-                           <p>Aplicação e estudo de princípios e padrões, para maior aproveitamento dos módulos do seu sistema.
-                               Impactando na eficiência como um todo, extensibilidade, reuso e leitura universal.</p>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-sm-6 col-md-4">
-                   <div class="thumbnail">
-                       <img src="assets/icons/drops.png">
-                       <div class="caption">
-                           <p>Relacionamento pleno e transparente com nossos clientes, buscando mostrar sempre os dois lados da moeda nas escolhas feitas.</p>
-                       </div>
-                   </div>
-               </div>
-           </div>
-            -->
 <script src="dist/vendor/all.js"></script>
 <script>
-    jQuery(window).scroll(function(){
+    jQuery(window).scroll(function () {
         var fromTopPx = 200; // distance to trigger
         var scrolledFromtop = jQuery(window).scrollTop();
-        if(scrolledFromtop > fromTopPx){
+        if (scrolledFromtop > fromTopPx) {
             jQuery('.intro').addClass('lamp-on');
-        }else{
+        } else {
             jQuery('.intro').removeClass('lamp-on');
         }
     });
