@@ -20,12 +20,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <h1 class="effect-phrase animated bounceInLeft">
+                    <h1 class="effect-phrase">
                         Criatividade,</br>
                         Agilidade</br>
-                        e muito valor.
+                        e muito valor.</br></br>
+                        Para o seu negócio!
                     </h1>
-                    <h1 class="effect-phrase animated bounceInLeft">Para o seu negócio!</h1>
                 </div>
             </div>
         </div>
@@ -88,7 +88,8 @@
             <span class="name">Ramon Schmidt</span>
             <p>Cursando Sistemas de Informação, com 3 anos de experiência em desenvolvimento de software.</p>
             <p> Melhoria contínua sempre, seja em questão de código, tecnologias, relações interpessoais, negócio...</p>
-            <p> Sou o tipo de pessoa que não curte ficar parado, gosto de produzir e de enchergar valor nas coisas que faço.</p>
+            <p> Sou o tipo de pessoa que não curte ficar parado, gosto de produzir e de enchergar valor nas coisas que
+                faço.</p>
         </div>
     </div>
 </section>
@@ -274,17 +275,21 @@
         var introDiv = jQuery('.intro');
         var effectPhrase = jQuery('.effect-phrase');
         var background = jQuery('.background-effect');
-        if (scrolledFromtop > fromTopPx) {
-            introDiv.addClass('lamp-on');
-            setTimeout(function (){
-                effectPhrase.addClass('lights-on');
-                background.addClass('reduceOpacity');
-            }, 100);
-        } else {
-            introDiv.removeClass('lamp-on');
-            effectPhrase.removeClass('lights-on');
-            background.removeClass('reduceOpacity');
-        }
+        clearTimeout($.data(this, "scrollCheck"));
+        $.data(this, "scrollCheck", setTimeout(function () {
+            if (scrolledFromtop > fromTopPx) {
+                introDiv.addClass('lamp-on');
+                setTimeout(function () {
+                    background.addClass('reduceOpacity');
+                    effectPhrase.addClass('lights-on animated fadeIn').show();
+                }, 100);
+            } else {
+                introDiv.removeClass('lamp-on');
+                effectPhrase.removeClass('lights-on animated fadeIn').hide();
+                background.removeClass('reduceOpacity');
+            }
+        }, 250));
+
 
     });
 </script>
