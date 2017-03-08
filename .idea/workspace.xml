@@ -5,7 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/all.css" afterPath="$PROJECT_DIR$/assets/css/all.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/sass/_firstpage.scss" afterPath="$PROJECT_DIR$/assets/sass/_firstpage.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,8 +27,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="486">
-                  <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+                <state relative-caret-position="142">
+                  <caret line="271" column="26" lean-forward="false" selection-start-line="271" selection-start-column="26" selection-end-line="271" selection-end-column="26" />
                   <folding />
                 </state>
               </provider>
@@ -39,7 +38,7 @@
             <entry file="file://$PROJECT_DIR$/assets/sass/_firstpage.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="226">
-                  <caret line="42" column="1" lean-forward="false" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+                  <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -388,12 +387,12 @@
       <workItem from="1488729468259" duration="16201000" />
       <workItem from="1488765642622" duration="4052000" />
       <workItem from="1488814553942" duration="12334000" />
-      <workItem from="1488890947586" duration="11551000" />
+      <workItem from="1488890947586" duration="12289000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76996000" />
+    <option name="totallyTimeSpent" value="77734000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -676,15 +675,15 @@
     <entry file="file://$PROJECT_DIR$/assets/sass/_firstpage.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
-          <caret line="42" column="1" lean-forward="false" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        <state relative-caret-position="142">
+          <caret line="271" column="26" lean-forward="false" selection-start-line="271" selection-start-column="26" selection-end-line="271" selection-end-column="26" />
           <folding />
         </state>
       </provider>
