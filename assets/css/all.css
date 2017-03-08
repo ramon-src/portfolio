@@ -8869,7 +8869,6 @@ p {
   padding: 100px 0;
   text-align: center;
   color: #ffffff;
-  background: url(../imgs/lamp-black-min.jpeg) no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -8885,8 +8884,29 @@ p {
       margin: 14% 0px 0px 45px;
       display: inline-block; }
 
+.background-effect {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  filter: alpha(opacity=100);
+  opacity: 1;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -ms-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out; }
+
+.reduceOpacity {
+  filter: alpha(opacity=50);
+  opacity: 0.5; }
+
 .lamp-on {
-  background: url(../imgs/lamp-black-min.jpeg) no-repeat bottom center scroll; }
+  background: url(../imgs/lights-light-bulb-idea-min.jpg) no-repeat bottom center scroll; }
+
+.lights-on {
+  color: #FFD906;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
 
 .intro .intro-body .brand-heading {
   font-size: 40px; }
@@ -8992,7 +9012,6 @@ p {
   padding: 100px 0;
   text-align: center;
   color: #ffffff;
-  background: url(../imgs/lamp-black-min.jpeg) no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -9008,8 +9027,29 @@ p {
       margin: 14% 0px 0px 45px;
       display: inline-block; }
 
+.background-effect {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  filter: alpha(opacity=100);
+  opacity: 1;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -ms-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out; }
+
+.reduceOpacity {
+  filter: alpha(opacity=50);
+  opacity: 0.5; }
+
 .lamp-on {
-  background: url(../imgs/lamp-black-min.jpeg) no-repeat bottom center scroll; }
+  background: url(../imgs/lights-light-bulb-idea-min.jpg) no-repeat bottom center scroll; }
+
+.lights-on {
+  color: #FFD906;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
 
 .intro .intro-body .brand-heading {
   font-size: 40px; }

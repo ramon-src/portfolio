@@ -15,18 +15,17 @@
 <body>
 <!-- Intro Header -->
 <header class="intro parallax">
+    <div class="background-effect"></div>
     <div class="intro-body">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <img src="assets/imgs/profile.jpg" class="img-circle animated bounceInDown">
-
-                    <h1 class="animated bounceInLeft">
-                        Criatividade</br>
+                    <h1 class="effect-phrase animated bounceInLeft">
+                        Criatividade,</br>
                         Agilidade</br>
                         e muito valor.
                     </h1>
-                    <h2>Para o seu negócio!</h2>
+                    <h1 class="effect-phrase animated bounceInLeft">Para o seu negócio!</h1>
                 </div>
             </div>
         </div>
@@ -87,6 +86,9 @@
             </div>
             <img src="assets/imgs/profile.jpg" class="img-circle animated bounceInDown">
             <span class="name">Ramon Schmidt</span>
+            <p>Cursando Sistemas de Informação, com 3 anos de experiência em desenvolvimento de software.</p>
+            <p> Melhoria contínua sempre, seja em questão de código, tecnologias, relações interpessoais, negócio...</p>
+            <p> Sou o tipo de pessoa que não curte ficar parado, gosto de produzir e de enchergar valor nas coisas que faço.</p>
         </div>
     </div>
 </section>
@@ -267,13 +269,23 @@
 <script src="dist/vendor/all.js"></script>
 <script>
     jQuery(window).scroll(function () {
-        var fromTopPx = 200; // distance to trigger
+        var fromTopPx = 50; // distance to trigger
         var scrolledFromtop = jQuery(window).scrollTop();
+        var introDiv = jQuery('.intro');
+        var effectPhrase = jQuery('.effect-phrase');
+        var background = jQuery('.background-effect');
         if (scrolledFromtop > fromTopPx) {
-            jQuery('.intro').addClass('lamp-on');
+            introDiv.addClass('lamp-on');
+            setTimeout(function (){
+                effectPhrase.addClass('lights-on');
+                background.addClass('reduceOpacity');
+            }, 100);
         } else {
-            jQuery('.intro').removeClass('lamp-on');
+            introDiv.removeClass('lamp-on');
+            effectPhrase.removeClass('lights-on');
+            background.removeClass('reduceOpacity');
         }
+
     });
 </script>
 </body>
