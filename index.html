@@ -27,10 +27,10 @@
                         Para o seu negócio!
                     </h1>
                     <div id="typed-strings">
-                        <p>Aqui você encontra.</p>
-                        <p>Criatividade.</p>
-                        <p>Agilidade.</p>
-                        <p>Confiança.</p>
+                        <p>Aqui você encontra</p>
+                        <p>Criatividade</p>
+                        <p>Agilidade</p>
+                        <p>Confiança</p>
                         <p>E muito valor para o seu negócio!</p>
                     </div>
                     <div class="typewriter"></div>
@@ -40,11 +40,53 @@
     </div>
 
     <div class="scroll">
-        <span class="phrase-scroll">Conheça mais nosso trabalho!</span>
-        <div class='icon-scroll'></div>
+        <span class="phrase-scroll">Conheça nosso trabalho!</span>
+
+        <div class="mouse-icon">
+            <div class="wheel"></div>
+        </div>
     </div>
 </header>
+<header class="header">
 
+    <nav class="navbar navbar-custom" role="navigation">
+
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">John Doe</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="custom-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#home">home</a></li>
+                    <li class=""><a href="#portfolio">Works</a></li>
+                    <li class=""><a href="#services">Service</a></li>
+                    <li class=""><a href="#about">About</a></li>
+                    <li class=""><a href="#contact">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            UI Elements <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="icons.html">Icons</a></li>
+                            <li><a href="components.html">Components</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div><!-- .container -->
+
+    </nav>
+
+</header>
 <!-- About Section -->
 <section id="about" class="container content-section">
     <div class="row">
@@ -56,11 +98,11 @@
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail animated bounceInLeft">
                         <img src="assets/icons/drops.png">
+                        <i class="fa fa-4x fa-tint"></i>
                         <div class="caption">
                             <h3>Transparência</h3>
-                            <p>Prezamos muito pela transparência com nossos clientes, mantendo uma relação direta e com
-                                muita
-                                conversa do início ao fim do projeto.
+                            <p>
+                                Prezamos pela transparência, relação direta e diálogo franco no desenvolvimento dos projetos.
                             </p>
                         </div>
                     </div>
@@ -79,10 +121,7 @@
                         <img src="assets/icons/calendar.png">
                         <div class="caption">
                             <h3>Comprometimento</h3>
-                            <p>Toda reunião, conversas, prazos serão sempre bem estudados para que não haja nenhuma
-                                falta das
-                                duas partes.
-                            </p>
+                            <p>Reuniões e prazos serão bem planejados para sua satisfação.</p>
                         </div>
                     </div>
                 </div>
@@ -302,14 +341,14 @@
         setTimeout(function () {
             $(".typewriter").typed({
                 stringsElement: phrases,
-                typeSpeed: 50,
+                typeSpeed: 0,
                 callback: function () {
                     $('.typed-cursor').hide();
                     setTimeout(function () {
                         $('.phrase-scroll').show().addClass('animated fadeIn');
                     }, 1500);
                     setTimeout(function () {
-                        $('.icon-scroll').show().addClass('animated fadeInUp');
+                        $('.mouse-icon').show().addClass('animated fadeInUp');
                     }, 2500);
                 }
             });

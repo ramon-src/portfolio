@@ -18,10 +18,14 @@ var path = {
             'dist/vendor/typedjs/js/typed.js'
         ]
     },
+    /**
+     * To font-awesome work we need add the folder fonts to assets
+     */
     css: {
         modules: [
             'node_modules/bootstrap/dist/css/bootstrap.css',
-            'node_modules/animate.css/animate.css'
+            'node_modules/animate.css/animate.css',
+            'dist/vendor/font-awesome-4.7.0/css/font-awesome.css'
         ]
     },
     vendor: 'dist/vendor/'
