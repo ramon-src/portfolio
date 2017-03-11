@@ -6433,7 +6433,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Lobster', cursive;
   color: #2d2d2d;
   background-color: #ffffff;
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2); }
@@ -8866,7 +8866,7 @@ p {
   padding: 100px 0;
   text-align: center;
   color: #ffffff;
-  background-color: black;
+  background: url(../imgs/creative-table-wallpaper.jpeg) no-repeat bottom center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -8880,6 +8880,7 @@ p {
     .intro .intro-body h1 {
       margin: 14% 0px 0px 45px; }
 
+/*
 .background-effect {
   position: absolute;
   width: 100%;
@@ -8887,16 +8888,21 @@ p {
   background-color: black;
   filter: alpha(opacity=100);
   opacity: 1;
-  transition: opacity .10s; }
-
-.reduceOpacity {
+  //-webkit-transition: opacity .5s ease-in-out;
+  //-moz-transition: opacity .5s ease-in-out;
+  //-ms-transition: opacity .5s ease-in-out;
+  //-o-transition: opacity .5s ease-in-out;
+  transition: opacity .10s;
+}
+.reduceOpacity{
   filter: alpha(opacity=50);
   opacity: 0.5;
-  transition: opacity 3s; }
-
+  transition: opacity 3s;
+}
 .lamp-on {
-  background: url(../imgs/light-bulb-hd-min.jpg) no-repeat bottom center scroll; }
-
+  background: url(../imgs/light-bulb-hd-min.jpg) no-repeat bottom center scroll;
+}
+*/
 .effect-phrase {
   display: none; }
 
@@ -8928,8 +8934,108 @@ p {
 #aboutme .name {
   font-size: 2em; }
 
+.scroll {
+  position: absolute;
+  left: 0px;
+  bottom: 15px;
+  height: 200px;
+  width: 100%; }
+  .scroll .phrase-scroll {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    font-size: 2em;
+    color: #693A09; }
+
+.icon-scroll,
+.icon-scroll:before {
+  left: 50%;
+  position: absolute;
+  bottom: 0px; }
+
+.icon-scroll {
+  display: none;
+  width: 40px;
+  height: 70px;
+  margin-left: -20px;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #693A09;
+  border: 2px solid #693A09;
+  border-radius: 25px; }
+
+.icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #693A09;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+  animation-name: scroll; }
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(46px);
+    transform: translateY(46px); } }
+
+@keyframes scroll {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(46px);
+    transform: translateY(46px); } }
+
 #services .media-object {
   width: 60px; }
+
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+  font-size: 4em;
+  color: #693A09; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.typewriter {
+  font-size: 4em;
+  color: #693A09;
+  display: inline-block; }
 
 html {
   width: 100%;
@@ -8938,7 +9044,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Lobster', cursive;
   color: #2d2d2d;
   background-color: #ffffff;
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2); }
@@ -9005,7 +9111,7 @@ p {
   padding: 100px 0;
   text-align: center;
   color: #ffffff;
-  background-color: black;
+  background: url(../imgs/creative-table-wallpaper.jpeg) no-repeat bottom center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -9019,6 +9125,7 @@ p {
     .intro .intro-body h1 {
       margin: 14% 0px 0px 45px; }
 
+/*
 .background-effect {
   position: absolute;
   width: 100%;
@@ -9026,16 +9133,21 @@ p {
   background-color: black;
   filter: alpha(opacity=100);
   opacity: 1;
-  transition: opacity .10s; }
-
-.reduceOpacity {
+  //-webkit-transition: opacity .5s ease-in-out;
+  //-moz-transition: opacity .5s ease-in-out;
+  //-ms-transition: opacity .5s ease-in-out;
+  //-o-transition: opacity .5s ease-in-out;
+  transition: opacity .10s;
+}
+.reduceOpacity{
   filter: alpha(opacity=50);
   opacity: 0.5;
-  transition: opacity 3s; }
-
+  transition: opacity 3s;
+}
 .lamp-on {
-  background: url(../imgs/light-bulb-hd-min.jpg) no-repeat bottom center scroll; }
-
+  background: url(../imgs/light-bulb-hd-min.jpg) no-repeat bottom center scroll;
+}
+*/
 .effect-phrase {
   display: none; }
 
@@ -9069,3 +9181,66 @@ p {
 
 #aboutme .name {
   font-size: 2em; }
+
+.scroll {
+  position: absolute;
+  left: 0px;
+  bottom: 15px;
+  height: 200px;
+  width: 100%; }
+  .scroll .phrase-scroll {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    font-size: 2em;
+    color: #693A09; }
+
+.icon-scroll,
+.icon-scroll:before {
+  left: 50%;
+  position: absolute;
+  bottom: 0px; }
+
+.icon-scroll {
+  display: none;
+  width: 40px;
+  height: 70px;
+  margin-left: -20px;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #693A09;
+  border: 2px solid #693A09;
+  border-radius: 25px; }
+
+.icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #693A09;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+  animation-name: scroll; }
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(46px);
+    transform: translateY(46px); } }
+
+@keyframes scroll {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(46px);
+    transform: translateY(46px); } }
