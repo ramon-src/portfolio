@@ -9000,6 +9000,14 @@ p {
 #services .media-object {
   width: 60px; }
 
+#hello {
+  display: none;
+  font-size: 4em;
+  color: #693A09; }
+
+#typed-strings {
+  display: none; }
+
 .typed-cursor {
   opacity: 1;
   -webkit-animation: blink 0.7s infinite;

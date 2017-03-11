@@ -282,20 +282,38 @@
 
 <script src="dist/vendor/all.js"></script>
 <script>
-    $(function () {
-        $(".typewriter").typed({
-            stringsElement: document.getElementById('typed-strings'),
-            typeSpeed: 50,
-            callback: function () {
-                $('.typed-cursor').hide();
-                setTimeout(function () {
-                    $('.phrase-scroll').show().addClass('animated fadeIn');
-                }, 1500);
-                setTimeout(function () {
-                    $('.icon-scroll').show().addClass('animated fadeInUp');
-                }, 2500);
-            }
-        });
+    var now = new Date();
+    var hour = now.getHours();
+    var text;
+    if (hour >= 5 && hour <= 11) {
+        text = 'Bom dia!';
+    } else if (hour >= 12 && hour <= 18) {
+        text = "Boa tarde!";
+    } else if (hour >= 19 && hour <= 4) {
+        text = 'Boa noite!';
+    }
+    $(document).ready(function () {
+        var phrases = document.getElementById('typed-strings');
+        var firstPhrase = phrases.firstChild;
+        var phrase = document.createElement('p');
+        phrase.innerHTML = text + '^1000';
+        phrases.insertBefore(phrase, firstPhrase);
+
+        setTimeout(function () {
+            $(".typewriter").typed({
+                stringsElement: phrases,
+                typeSpeed: 50,
+                callback: function () {
+                    $('.typed-cursor').hide();
+                    setTimeout(function () {
+                        $('.phrase-scroll').show().addClass('animated fadeIn');
+                    }, 1500);
+                    setTimeout(function () {
+                        $('.icon-scroll').show().addClass('animated fadeInUp');
+                    }, 2500);
+                }
+            });
+        }, 1000);
     });
 
 
