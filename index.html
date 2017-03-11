@@ -102,7 +102,8 @@
                         <div class="caption">
                             <h3>Transparência</h3>
                             <p>
-                                Prezamos pela transparência, relação direta e diálogo franco no desenvolvimento dos projetos.
+                                Prezamos pela transparência, relação direta e diálogo franco no desenvolvimento dos
+                                projetos.
                             </p>
                         </div>
                     </div>
@@ -328,9 +329,10 @@
         text = 'Bom dia!';
     } else if (hour >= 12 && hour <= 18) {
         text = "Boa tarde!";
-    } else if (hour >= 19 && hour <= 4) {
+    } else {
         text = 'Boa noite!';
     }
+
     $(document).ready(function () {
         var phrases = document.getElementById('typed-strings');
         var firstPhrase = phrases.firstChild;
