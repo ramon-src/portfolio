@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Ramon Schmidt</title>
+    <title>Ramon Schmidt - Web Developer</title>
     <meta charset="UTF-8">
 
     <meta name="author" content="Ramon Schmidt">
@@ -13,6 +13,7 @@
           rel="stylesheet">
 </head>
 <body>
+
 <!-- Intro Header -->
 <header class="intro parallax">
     <div class="background-effect"></div>
@@ -47,12 +48,10 @@
         </div>
     </div>
 </header>
-<header class="header">
 
+<header class="header nav-relative">
     <nav class="navbar navbar-custom" role="navigation">
-
         <div class="container">
-
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -60,33 +59,21 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">John Doe</a>
+                <a class="navbar-brand" href="">Ramon Schmidt</a>
             </div>
 
             <div class="collapse navbar-collapse" id="custom-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#home">home</a></li>
-                    <li class=""><a href="#portfolio">Works</a></li>
-                    <li class=""><a href="#services">Service</a></li>
-                    <li class=""><a href="#about">About</a></li>
-                    <li class=""><a href="#contact">Contact</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            UI Elements <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="icons.html">Icons</a></li>
-                            <li><a href="components.html">Components</a></li>
-                        </ul>
-                    </li>
+                    <li class="active"><a href="#portfolio">Portfólio</a></li>
+                    <li class=""><a href="#services">Serviços</a></li>
+                    <li class=""><a href="#about">Sobre</a></li>
+                    <li class=""><a href="#contact">Contato</a></li>
                 </ul>
             </div>
-
         </div><!-- .container -->
-
     </nav>
-
 </header>
+
 <!-- About Section -->
 <section id="about" class="container content-section">
     <div class="row">
@@ -131,6 +118,7 @@
     </div>
 </section>
 
+<!-- About Section -->
 <section id="aboutme" class="container content-section">
     <div class="row">
         <div class="col-lg-10 col-lg-offset-1">
@@ -141,12 +129,13 @@
             <span class="name">Ramon Schmidt</span>
             <p>Cursando Sistemas de Informação, com 3 anos de experiência em desenvolvimento de software.</p>
             <p> Melhoria contínua sempre, seja em questão de código, tecnologias, relações interpessoais, negócio...</p>
-            <p> Sou o tipo de pessoa que não curte ficar parado, gosto de produzir e de enchergar valor nas coisas que
+            <p> Sou o tipo de pessoa que não curte ficar parado, gosto de produzir e de enxergar valor nas coisas que
                 faço.</p>
         </div>
     </div>
 </section>
 
+<!-- Services Section -->
 <section id="services" class="container content-section">
     <div class="row">
         <div class="col-lg-10 col-lg-offset-1">
@@ -249,6 +238,8 @@
     apreciamos o comprometimento dos clientes em seus projetos.
 
 </section>
+
+<!-- How We Work Section -->
 <section id="how-we-work" class="container content-section">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
@@ -317,7 +308,11 @@
         </div>
     </div>
 </section>
+
+<!-- Tecnologies Section -->
 <section id="tecnologies" class="container content-section"></section>
+
+<!-- Contact Section -->
 <section id="contact" class="container content-section"></section>
 
 <script src="dist/vendor/all.js"></script>
@@ -355,6 +350,26 @@
                 }
             });
         }, 1000);
+    });
+    var nav = $('.header');
+    var offset = nav.offset().top;
+
+    $(window).bind('scroll', function () {
+        if ($(window).scrollTop() > offset) {
+            if(!nav.hasClass('nav-fixed'))
+                nav.removeClass('nav-relative').addClass('nav-fixed');
+        } else {
+            if(!nav.hasClass('nav-relative'))
+                nav.removeClass('nav-fixed').addClass('nav-relative');
+        }
+    });
+
+    $('.navbar-custom a').bind("click", function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 1000);
+        e.preventDefault();
     });
 
 
