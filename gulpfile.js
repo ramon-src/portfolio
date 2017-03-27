@@ -15,16 +15,17 @@ var path = {
         modules: [
             'node_modules/jquery/dist/jquery.js',
             'node_modules/bootstrap/dist/js/bootstrap.js',
-            'dist/vendor/typedjs/js/typed.js'
+            'dist/vendor/typedjs/js/typed.js',
+            'node_modules/fullpage.js/dist/jquery.fullpage.js',
+            'node_modules/lightgallery.js/dist/js/lightgallery.js'
         ]
     },
     css: {
         modules: [
             'node_modules/bootstrap/dist/css/bootstrap.css',
             'node_modules/animate.css/animate.css',
-            /**
-             * To font-awesome work we need add the folder fonts to assets
-             */
+            'node_modules/fullpage.js/dist/jquery.fullpage.css',
+            'node_modules/lightgallery.js/dist/css/lightgallery.css',
             'dist/vendor/font-awesome-4.7.0/css/font-awesome.css'
         ]
     },

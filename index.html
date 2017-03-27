@@ -74,6 +74,93 @@
     </nav>
 </header>
 
+<section id="portfolio" class="content-section">
+    <div class="background-for-container"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="title">
+                    <span>Portifólio</span>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="thumbnail">
+                    <img src="assets/imgs/portfolio2-min.png" class="img-thumbnail">
+                    <div class="title">
+                        DAI - PUCRS
+                    </div>
+                    <div class="description">
+                        Sistema de inscrições de alunos e participação de palestras da Semana Acadêmica dos cursos de
+                        Informação.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="thumbnail">
+                    <img src="assets/imgs/portfolio1-min.png" class="img-thumbnail">
+                    <div class="title">
+                        Gráfica Arejano
+                    </div>
+                    <div class="description">
+                        Sistema de orçamentos e pedidos, baseado em loja virtual. O site todo é gerenciado pelo sistema
+                        interno (dinâmico).
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="thumbnail">
+                    <img src="assets/imgs/portfolio3-min.png" class="img-thumbnail">
+                    <div class="title">
+                        Ipsum Community
+                    </div>
+                    <div class="description">
+                        Gerador de textos Open-Source Lorem Ipsum, para mockup de layouts.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="aboutme" class="content-section">
+
+    <div class="background-for-container"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="title">
+                    <span>Sobre</span>
+                </div>
+
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-thumbnail animated bounceInDown" src="assets/imgs/profile.jpg"
+                                 alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading name">Ramon Schmidt</span>
+                        <div class="description">
+                            <p>Cursando Sistemas de Informação, com 3 anos de experiência em desenvolvimento de
+                                software.</p>
+                            <p> Melhoria contínua sempre, seja em questão de código, tecnologias, relações
+                                interpessoais,
+                                negócio...</p>
+                            <p> Sou o tipo de pessoa que não curte ficar parado, gosto de produzir e de enxergar valor
+                                nas
+                                coisas que
+                                faço.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- About Section -->
 <section id="about" class="container content-section">
     <div class="row">
@@ -84,8 +171,7 @@
             <div class="row">
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail animated bounceInLeft">
-                        <img src="assets/icons/drops.png">
-                        <i class="fa fa-4x fa-tint"></i>
+                        <i class="fa fa-tint"></i>
                         <div class="caption">
                             <h3>Transparência</h3>
                             <p>
@@ -114,23 +200,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<!-- About Section -->
-<section id="aboutme" class="container content-section">
-    <div class="row">
-        <div class="col-lg-10 col-lg-offset-1">
-            <div class="title">
-                <span>Sobre</span>
-            </div>
-            <img src="assets/imgs/profile.jpg" class="img-circle animated bounceInDown">
-            <span class="name">Ramon Schmidt</span>
-            <p>Cursando Sistemas de Informação, com 3 anos de experiência em desenvolvimento de software.</p>
-            <p> Melhoria contínua sempre, seja em questão de código, tecnologias, relações interpessoais, negócio...</p>
-            <p> Sou o tipo de pessoa que não curte ficar parado, gosto de produzir e de enxergar valor nas coisas que
-                faço.</p>
         </div>
     </div>
 </section>
@@ -316,7 +385,12 @@
 <section id="contact" class="container content-section"></section>
 
 <script src="dist/vendor/all.js"></script>
+
 <script>
+    /*$('#portfolio img').hover(function (e) {
+     var url = e.target.getAttribute('src');
+     $('#portfolio .background-for-container').css('background-image', "url(" + url + ")");
+     });*/
     var now = new Date();
     var hour = now.getHours();
     var text;
@@ -356,15 +430,15 @@
 
     $(window).bind('scroll', function () {
         if ($(window).scrollTop() > offset) {
-            if(!nav.hasClass('nav-fixed'))
+            if (!nav.hasClass('nav-fixed'))
                 nav.removeClass('nav-relative').addClass('nav-fixed');
         } else {
-            if(!nav.hasClass('nav-relative'))
+            if (!nav.hasClass('nav-relative'))
                 nav.removeClass('nav-fixed').addClass('nav-relative');
         }
     });
 
-    $('.navbar-custom a').bind("click", function(e){
+    $('.navbar-custom a').bind("click", function (e) {
         var anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $(anchor.attr('href')).offset().top
