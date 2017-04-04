@@ -22,7 +22,7 @@
 
         config.sections.forEach(function (sections) {
             sections.children.forEach(function (child) {
-                $(child.el).hide();
+                if (!child.visible) $(child.el).hide();
             });
         });
 
@@ -48,7 +48,7 @@
                         }
                     }
                 }
-            }, 500));
+            }, 250));
 
             function addEffects(sectionId) {
                 config.sections.forEach(function (sections) {
