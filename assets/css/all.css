@@ -6426,11 +6426,78 @@ button.close {
     display: none !important; } }
 
 /*# sourceMappingURL=bootstrap.css.map */
-#aboutme .title {
-  color: white; }
+html {
+  width: 100%;
+  height: 100%; }
 
-#aboutme .background-for-container {
-  background-image: url("../imgs/desk-pc-hd-min.jpeg"); }
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Lobster', cursive;
+  color: #2d2d2d;
+  background-color: #ffffff;
+  webkit-tap-highlight-color: rgba(255, 255, 255, 0.2); }
+
+p {
+  font-family: 'Arimo', sans-serif;
+  font-size: 1.2em; }
+
+.content-section {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 200px; }
+  .content-section .title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 100px; }
+    .content-section .title span {
+      padding: 10px 0px;
+      border-top: 1px solid #693A09;
+      border-bottom: 1px solid #693A09; }
+
+#map {
+  width: 100%;
+  height: 200px;
+  margin-top: 100px; }
+
+@media (min-width: 767px) {
+  .content-section {
+    padding-top: 200px; }
+  .download-section {
+    padding: 100px 0; }
+  #map {
+    height: 400px;
+    margin-top: 250px; } }
+
+.parallax {
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important; }
+
+@media only screen and (max-device-width: 1024px) {
+  .parallax {
+    background-attachment: scroll !important; } }
+
+.thumbnail {
+  height: 350px;
+  padding-top: 10px; }
+  .thumbnail .caption {
+    text-align: center;
+    text-justify: inter-word; }
+  .thumbnail:hover {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2); }
+
+.icon-large {
+  font-size: 90px; }
+
+.media {
+  padding: 30px 0px 0px 0px; }
+  .media .media-object {
+    width: 90px;
+    margin-right: 10px; }
 
 /*!
  * animate.css -http://daneden.me/animate
@@ -8798,6 +8865,84 @@ button.close {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
+.intro {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  text-align: center;
+  color: #ffffff;
+  background: url(../imgs/creative-table-wallpaper.jpeg) no-repeat bottom center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+  .intro .intro-body {
+    display: table-cell;
+    vertical-align: middle; }
+    .intro .intro-body img {
+      float: left;
+      width: 300px; }
+    .intro .intro-body h1 {
+      margin: 14% 0px 0px 45px; }
+
+.background-for-container {
+  position: absolute;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: left top;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  /*filter: alpha(opacity=50);
+  opacity: .50;*/ }
+
+/*
+.background-effect {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  filter: alpha(opacity=100);
+  opacity: 1;
+  //-webkit-transition: opacity .5s ease-in-out;
+  //-moz-transition: opacity .5s ease-in-out;
+  //-ms-transition: opacity .5s ease-in-out;
+  //-o-transition: opacity .5s ease-in-out;
+  transition: opacity .10s;
+}
+.reduceOpacity{
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  transition: opacity 3s;
+}
+.lamp-on {
+  background: url(../imgs/light-bulb-hd-min.jpg) no-repeat bottom center scroll;
+}
+*/
+.effect-phrase {
+  display: none; }
+
+.lights-on {
+  color: #FFD906;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+
+.intro .intro-body .brand-heading {
+  font-size: 40px; }
+
+.intro .intro-body .intro-text {
+  font-size: 18px; }
+
+@media (min-width: 768px) {
+  .intro {
+    height: 100%;
+    padding: 0; }
+  .intro .intro-body .brand-heading {
+    font-size: 100px; }
+  .intro .intro-body .intro-text {
+    font-size: 26px; } }
+
 /*!
  * fullPage 2.9.4
  * https://github.com/alvarotrigo/fullPage.js
@@ -9029,76 +9174,6 @@ html.fp-enabled,
 .fp-responsive .fp-auto-height-responsive .fp-slide,
 .fp-responsive .fp-auto-height-responsive .fp-tableCell {
   height: auto !important; }
-
-html {
-  width: 100%;
-  height: 100%; }
-
-body {
-  width: 100%;
-  height: 100%;
-  font-family: 'Lobster', cursive;
-  color: #2d2d2d;
-  background-color: #ffffff;
-  webkit-tap-highlight-color: rgba(255, 255, 255, 0.2); }
-
-p {
-  font-family: 'Arimo', sans-serif;
-  font-size: 1.2em; }
-
-.content-section {
-  position: relative;
-  padding-top: 100px;
-  padding-bottom: 200px; }
-  .content-section .title {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 100px; }
-    .content-section .title span {
-      padding: 10px 0px;
-      border-top: 1px solid #693A09;
-      border-bottom: 1px solid #693A09; }
-
-#map {
-  width: 100%;
-  height: 200px;
-  margin-top: 100px; }
-
-@media (min-width: 767px) {
-  .content-section {
-    padding-top: 150px; }
-  .download-section {
-    padding: 100px 0; }
-  #map {
-    height: 400px;
-    margin-top: 250px; } }
-
-.parallax {
-  background-attachment: fixed !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important; }
-
-@media only screen and (max-device-width: 1024px) {
-  .parallax {
-    background-attachment: scroll !important; } }
-
-.thumbnail {
-  height: 350px;
-  padding-top: 10px; }
-  .thumbnail .caption {
-    text-align: center;
-    text-justify: inter-word; }
-  .thumbnail:hover {
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2); }
-
-.media {
-  padding: 30px 0px 0px 0px; }
-  .media .media-object {
-    width: 90px;
-    margin-right: 10px; }
 
 @font-face {
   font-family: 'lg';
@@ -10028,83 +10103,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   -o-transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
   transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s; }
 
-.intro {
-  display: table;
-  width: 100%;
-  height: auto;
-  padding: 100px 0;
-  text-align: center;
-  color: #ffffff;
-  background: url(../imgs/creative-table-wallpaper.jpeg) no-repeat bottom center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover; }
-  .intro .intro-body {
-    display: table-cell;
-    vertical-align: middle; }
-    .intro .intro-body img {
-      float: left;
-      width: 300px; }
-    .intro .intro-body h1 {
-      margin: 14% 0px 0px 45px; }
-
-.background-for-container {
-  position: absolute;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: left top;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  /*filter: alpha(opacity=50);
-  opacity: .50;*/ }
-
-/*
-.background-effect {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  filter: alpha(opacity=100);
-  opacity: 1;
-  //-webkit-transition: opacity .5s ease-in-out;
-  //-moz-transition: opacity .5s ease-in-out;
-  //-ms-transition: opacity .5s ease-in-out;
-  //-o-transition: opacity .5s ease-in-out;
-  transition: opacity .10s;
-}
-.reduceOpacity{
-  filter: alpha(opacity=50);
-  opacity: 0.5;
-  transition: opacity 3s;
-}
-.lamp-on {
-  background: url(../imgs/light-bulb-hd-min.jpg) no-repeat bottom center scroll;
-}
-*/
-.effect-phrase {
-  display: none; }
-
-.lights-on {
-  color: #FFD906;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
-
-.intro .intro-body .brand-heading {
-  font-size: 40px; }
-
-.intro .intro-body .intro-text {
-  font-size: 18px; }
-
-@media (min-width: 768px) {
-  .intro {
-    height: 100%;
-    padding: 0; }
-  .intro .intro-body .brand-heading {
-    font-size: 100px; }
-  .intro .intro-body .intro-text {
-    font-size: 26px; } }
+.info img {
+  width: 300px; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -12439,8 +12439,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   overflow: visible;
   clip: auto; }
 
-.info img {
-  width: 300px; }
+#aboutme {
+  color: #ffffff; }
+  #aboutme img {
+    width: 150px; }
+  #aboutme .name {
+    font-size: 2em; }
+  #aboutme .background-for-container {
+    background-image: url("../imgs/desk-pc-hd-min.jpeg"); }
 
 .header {
   border-bottom: 1px solid #f5f5f5;
@@ -12485,12 +12491,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   #portfolio .thumbnail .description {
     display: block;
     font-family: 'Arimo', sans-serif; }
-
-#aboutme img {
-  width: 150px; }
-
-#aboutme .name {
-  font-size: 2em; }
 
 .mouse-icon {
   position: absolute;
@@ -12614,11 +12614,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   color: #693A09;
   display: inline-block; }
 
-#aboutme .title {
-  color: white; }
+#values i {
+  color: #693A09;
+  margin-top: 25px; }
 
-#aboutme .background-for-container {
-  background-image: url("../imgs/desk-pc-hd-min.jpeg"); }
+#values .caption h3 {
+  color: #693A09; }
 
 html {
   width: 100%;
@@ -12656,7 +12657,7 @@ p {
 
 @media (min-width: 767px) {
   .content-section {
-    padding-top: 150px; }
+    padding-top: 200px; }
   .download-section {
     padding: 100px 0; }
   #map {
@@ -12683,6 +12684,9 @@ p {
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2); }
+
+.icon-large {
+  font-size: 90px; }
 
 .media {
   padding: 30px 0px 0px 0px; }
@@ -12774,11 +12778,21 @@ p {
 #services .media-object {
   width: 60px; }
 
-#aboutme img {
-  width: 150px; }
+#aboutme {
+  color: #ffffff; }
+  #aboutme img {
+    width: 150px; }
+  #aboutme .name {
+    font-size: 2em; }
+  #aboutme .background-for-container {
+    background-image: url("../imgs/desk-pc-hd-min.jpeg"); }
 
-#aboutme .name {
-  font-size: 2em; }
+#values i {
+  color: #693A09;
+  margin-top: 25px; }
+
+#values .caption h3 {
+  color: #693A09; }
 
 #portfolio .thumbnail {
   padding: 15px; }

@@ -73,7 +73,7 @@
         </div><!-- .container -->
     </nav>
 </header>
-
+<div id="section-animator">
 <section id="portfolio" class="content-section">
     <div class="background-for-container"></div>
     <div class="container">
@@ -161,17 +161,17 @@
     </div>
 </section>
 
-<!-- About Section -->
-<section id="about" class="container content-section">
+<!-- Values Section -->
+<section id="values" class="container content-section">
     <div class="row">
         <div class="col-lg-10 col-lg-offset-1">
             <div class="title">
-                <span>Temos 3 pilares muito fortes</span>
+                <span>Valores</span>
             </div>
             <div class="row">
                 <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail animated bounceInLeft">
-                        <i class="fa fa-tint"></i>
+                    <div id="1" class="thumbnail text-center">
+                        <i class="fa fa-tint icon-large"></i>
                         <div class="caption">
                             <h3>Transparência</h3>
                             <p>
@@ -182,8 +182,8 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail animated bounceInUp">
-                        <img src="assets/icons/hand-shake.png">
+                    <div id="2" class="thumbnail text-center">
+                        <i class="fa fa-universal-access icon-large"></i>
                         <div class="caption">
                             <h3>Respeito</h3>
                             <p>É a base de tudo e se aplica também no relacionamento empresa/cliente.</p>
@@ -191,8 +191,8 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail  animated bounceInRight">
-                        <img src="assets/icons/calendar.png">
+                    <div id="3" class="thumbnail text-center">
+                        <i class="fa fa-calendar-check-o icon-large"></i>
                         <div class="caption">
                             <h3>Comprometimento</h3>
                             <p>Reuniões e prazos serão bem planejados para sua satisfação.</p>
@@ -383,10 +383,36 @@
 
 <!-- Contact Section -->
 <section id="contact" class="container content-section"></section>
-
+</div>
 <script src="dist/vendor/all.js"></script>
-
+<script src="assets/js/ScrollSectionAnimator.js"></script>
 <script>
+
+    $('#section-animator section').SectionAnimator({
+        sections: [
+            {
+                sectionId: 'values',
+                children: [
+                    {
+                        el: '#1',
+                        animationClass: ['bounceInLeft'],
+                        startAt: 100,
+                        visible: false
+                    }, {
+                        el: '#2',
+                        animationClass: ['bounceInUp'],
+                        startAt: 500,
+                        visible: false
+                    }, {
+                        el: '#3',
+                        animationClass: ['bounceInRight'],
+                        startAt: 1000,
+                        visible: false
+                    }
+                ]
+            }
+        ],
+    });
     /*$('#portfolio img').hover(function (e) {
      var url = e.target.getAttribute('src');
      $('#portfolio .background-for-container').css('background-image', "url(" + url + ")");
