@@ -1,7 +1,7 @@
 #hello{
     display: none;
-    font-size: 4em;
-    color: $default;
+    font-size: 2.5em;
+    color: $white;
 }
 
 #typed-strings {
@@ -13,7 +13,7 @@
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
     font-size: 4em;
-    color: $default;
+    color: $white;
 }
 @keyframes blink{
     0% { opacity:1; }
@@ -32,7 +32,7 @@
 }
 
 .typewriter{
-    font-size: 4em;
-    color: $default;
+    font-size: 2.5em;
+    color: $white;
     display: inline-block;
 }
