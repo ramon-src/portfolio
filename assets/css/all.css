@@ -159,12 +159,20 @@ p {
 #presentation {
   background-color: #34AAAA;
   color: #ffffff; }
-  #presentation p {
-    font-family: 'Lobster', cursive;
-    font-size: 2.5em;
+  #presentation #content {
+    padding: 40px 20px 20px 20px;
+    margin: 100px 0px;
+    border: 5px solid #ffffff; }
+    #presentation #content .img-profile {
+      max-width: 150px; }
+    #presentation #content .info-container {
+      height: 200px;
+      width: 100%;
+      text-align: center; }
+  #presentation .typewriter {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2em;
     margin-bottom: 0px; }
-  #presentation .img-profile {
-    max-width: 180px; }
 
 #aboutme {
   color: #ffffff; }
@@ -12796,12 +12804,20 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 #presentation {
   background-color: #34AAAA;
   color: #ffffff; }
-  #presentation p {
-    font-family: 'Lobster', cursive;
-    font-size: 2.5em;
+  #presentation #content {
+    padding: 40px 20px 20px 20px;
+    margin: 100px 0px;
+    border: 5px solid #ffffff; }
+    #presentation #content .img-profile {
+      max-width: 150px; }
+    #presentation #content .info-container {
+      height: 200px;
+      width: 100%;
+      text-align: center; }
+  #presentation .typewriter {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2em;
     margin-bottom: 0px; }
-  #presentation .img-profile {
-    max-width: 180px; }
 
 .mouse-icon {
   position: absolute;
@@ -12891,7 +12907,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
-  font-size: 4em;
+  font-size: 2em;
   color: #ffffff; }
 
 @keyframes blink {

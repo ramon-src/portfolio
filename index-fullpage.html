@@ -46,27 +46,22 @@
     <section id="presentation" class="section">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <img src="assets/imgs/profile.jpg" alt="Ramon Schmidt Photo"
-                         class="img-circle img-responsive img-profile center-block">
-                    <div class="text-center">
-                        <div id="typed-strings">
-                            <p>Ramon Schmidt ^1000<br>Construindo valor para o seu negócio</p>
+                <div class="col-md-6 col-md-offset-3">
+                    <div id="content">
+                        <img src="assets/imgs/profile.jpg" alt="Ramon Schmidt Photo"
+                             class="img-circle img-responsive img-profile center-block">
+                        <div class="info-container">
+                            <div id="typed-strings">
+                                <p>Ramon Schmidt^500<br>Construindo valor para o seu negócio</p>
+                            </div>
+                            <div class="typewriter"></div>
                         </div>
-                        <div class="typewriter"></div>
                     </div>
                 </div>
             </div>
 
         </div>
 
-        <div class="scroll">
-            <span class="phrase-scroll">Conheça nosso trabalho!</span>
-
-            <div class="mouse-icon">
-                <div class="wheel"></div>
-            </div>
-        </div>
     </section>
 
 
@@ -343,6 +338,8 @@
             $(".typewriter").typed({
                 stringsElement: phrases,
                 typeSpeed: 0,
+                backSpeed: 0,
+                showCursor: false,
                 callback: function () {
                     $('.typed-cursor').hide();
                     setTimeout(function () {
