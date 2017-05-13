@@ -1,4 +1,26 @@
-#aboutme {
+#presentation {
+  background-color: $default;
+  color: $white;
 
+  #content {
+    padding: 40px 20px 20px 20px;
+    margin: 100px 0px;
+    border: 5px solid $white;
+
+    .img-profile {
+      max-width: 150px;
+    }
+    .info-container{
+      height: 200px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .typewriter {
+    @include font-header(2);
+    font-size: 2em;
+    margin-bottom: 0px;
+  }
 
 }
