@@ -48,9 +48,10 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <div id="content">
-                        <img src="assets/imgs/profile.jpg" alt="Ramon Schmidt Photo"
-                             class="img-circle img-responsive img-profile center-block">
                         <div class="info-container">
+                            <img src="assets/imgs/profile.jpg" alt="Ramon Schmidt Photo"
+                                 class="img-circle img-responsive img-profile center-block">
+
                             <div id="typed-strings">
                                 <p>Ramon Schmidt^500<br>Construindo valor para o seu negócio</p>
                             </div>
@@ -329,11 +330,11 @@
         $('#fullpage').fullpage();
 
         var phrases = document.getElementById('typed-strings');
-       /* var firstPhrase = phrases.firstChild;
-        var phrase = document.createElement('p');
-        phrase.innerHTML = text + '^1000';
-        phrases.insertBefore(phrase, firstPhrase);
-*/
+        /* var firstPhrase = phrases.firstChild;
+         var phrase = document.createElement('p');
+         phrase.innerHTML = text + '^1000';
+         phrases.insertBefore(phrase, firstPhrase);
+         */
         setTimeout(function () {
             $(".typewriter").typed({
                 stringsElement: phrases,
