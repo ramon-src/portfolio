@@ -180,6 +180,9 @@ p {
     font-family: 'Fjalla One', sans-serif;
     font-size: 2em;
     margin-bottom: 0px; }
+    @media screen and (max-width: 768px) {
+      #presentation .typewriter {
+        font-size: 1em; } }
 
 #aboutme {
   color: #ffffff; }
@@ -12832,6 +12835,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     font-family: 'Fjalla One', sans-serif;
     font-size: 2em;
     margin-bottom: 0px; }
+    @media screen and (max-width: 768px) {
+      #presentation .typewriter {
+        font-size: 1em; } }
 
 .mouse-icon {
   position: absolute;

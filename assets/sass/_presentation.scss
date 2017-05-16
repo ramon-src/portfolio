@@ -21,6 +21,7 @@
       .img-profile {
         max-width: 150px;
         margin-bottom: 10px;
+
       }
     }
   }
@@ -28,6 +29,10 @@
   .typewriter {
     @include font-header(2);
     font-size: 2em;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1em;
+    }
     margin-bottom: 0px;
   }
 
