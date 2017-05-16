@@ -182,7 +182,7 @@ p {
     margin-bottom: 0px; }
     @media screen and (max-width: 768px) {
       #presentation .typewriter {
-        font-size: 1em; } }
+        font-size: 1.5em; } }
 
 #aboutme {
   color: #ffffff; }
@@ -12837,7 +12837,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     margin-bottom: 0px; }
     @media screen and (max-width: 768px) {
       #presentation .typewriter {
-        font-size: 1em; } }
+        font-size: 1.5em; } }
 
 .mouse-icon {
   position: absolute;
